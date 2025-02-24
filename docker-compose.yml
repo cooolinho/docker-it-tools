@@ -1,0 +1,9 @@
+# https://github.com/CorentinTh/it-tools
+
+services:
+    it-tools:
+        image: 'corentinth/it-tools:latest'
+        ports:
+            - "${IT_TOOLS_PORT}:80"
+        restart: unless-stopped
+        container_name: it-tools
